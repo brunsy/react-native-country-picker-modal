@@ -178,8 +178,8 @@ export const CountryPicker = (props: CountryPickerProps) => {
     )
       .then(countries => cancel ? null : setCountries(countries))
       .catch(console.warn)
-    
-    return () => cancel = true
+
+    cancel = true;
   }, [translation, withEmoji])
 
   return (
